@@ -1,0 +1,92 @@
+:root {
+  --verde-obscuro: #42855b;
+  --verde-claro: #68d391;
+  --verde-hover: #37734d;
+}
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .topbar {
+    position: relative;
+    background-color: var(--verde-obscuro);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    gap: 10px;
+  }
+  
+  .topbar button {
+    width: auto;
+    padding: 1rem;
+    height: 2rem;
+    font-size: 0.8rem;
+    background-color: var(--verde-obscuro);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .topbar button:hover {
+    background-color: var(--verde-hover);
+  }
+  
+  @media (max-width: 600px) {
+    .topbar {
+      justify-content: center;
+      padding: 5px;
+      gap: 5px;
+    }
+  
+    .saludo {
+      font-size: 0.875rem;
+      padding: 8px 16px;
+    }
+  
+    button {
+      width: 4rem;
+      height: 2.5rem;
+      font-size: 0.875rem;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+    .topbar {
+      justify-content: center;
+      padding: 8px;
+      gap: 8px;
+    }
+  
+    button {
+      width: 4.5rem;
+      height: 2.75rem;
+      font-size: 0.9375rem;
+    }
+  }
+  
+  @media (min-width: 901px) {
+    .topbar {
+      justify-content: flex-end;
+      padding: 10px 20px;
+      gap: 10px;
+    }
+  
+    .saludo {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  
+    button {
+      width: 5rem;
+      height: 3rem;
+      font-size: 1rem;
+    }
+  }
