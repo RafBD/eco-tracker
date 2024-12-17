@@ -1,0 +1,69 @@
+:root {
+    --verde-obscuro: #42855b;
+    --verde-claro: #68d391;
+    --verde-hover: #37734d;
+  }
+
+  /* Personalizar la barra de desplazamiento en navegadores basados en WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f114; /* Color de fondo de la pista */
+    border-radius: 10px; /* Bordes redondeados de la pista */
+}
+  
+::-webkit-scrollbar-thumb {
+    background: var(--morado-obscuro); /* Color del pulgar */
+    border-radius: 10px; /* Bordes redondeados del pulgar */
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: var(--morado-obscuro); /* Color del pulgar al pasar el mouse */
+}
+  
+.sidebar {
+    color: white !important;
+}
+
+.sidebar-lat {
+    background-color: var(--verde-obscuro) !important;
+    color: white;
+
+    .submenu, .sidebar-option {
+        color: white !important;
+        border-radius: .5rem;
+    }
+
+    .sidebar-option:hover {
+        background-color: var(--verde-hover) !important;
+    
+    }
+    .logo {
+        margin-right: 1rem;
+        width: 5rem; /* Puedes ajustar este valor según sea necesario */
+        height: 5rem; /* Mantiene la proporción de la imagen */
+      }
+    
+    .nombre {
+        font-size: 1rem;
+    }
+
+    .usuario-container {
+        display: flex;
+        align-items: center;
+
+        .pic-name-user{
+            font-size: .8rem;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .imagen_usuario {
+            height: 3rem;
+            width: 3rem;
+          }
+    }
+}
